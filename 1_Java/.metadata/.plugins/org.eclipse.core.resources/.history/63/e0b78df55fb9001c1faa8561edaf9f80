@@ -1,0 +1,8 @@
+package com.test.chap01;
+
+public class Score {
+	private String name="¿Ã«—ΩΩ";
+	private int kor=90;
+	private int eng=86;
+	private int math=97;
+}

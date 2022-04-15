@@ -1,0 +1,12 @@
+package com.inherit.chap01.after.model.dto;
+
+import java.util.Date;
+
+public class Product {
+	private String brand;
+	private String productNumber;
+	private String productCode;
+	private String productName;
+	private int price;
+	private Date date;	
+}

@@ -1,0 +1,9 @@
+package com.test.chap01;
+
+public class Account {
+	String name ="¿Ã«—ΩΩ";
+	String accNo="123-456-7890";
+	String pwd="1234";
+	int bankCode=20;
+	int balance=0;
+}

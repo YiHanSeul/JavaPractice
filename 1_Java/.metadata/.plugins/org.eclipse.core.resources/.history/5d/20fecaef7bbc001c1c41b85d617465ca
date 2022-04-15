@@ -1,0 +1,18 @@
+package com.inherit.chap01.after.run;
+
+import java.util.Date;
+
+import com.inherit.chap01.after.model.dto.Desktop;
+import com.inherit.chap01.after.model.dto.SmartPhone;
+import com.inherit.chap01.after.model.dto.Television;
+
+public class MTest {
+	public static void main(String[] args) {
+		Television t=new Television("LG","03","t-22334","LGTV",400,new Date(), 65);
+		Desktop d=new Desktop("¾ÖÇÃ","01","m-01234","¾ÆÀÌ¸Æ",500,new Date(),"m1",500,32,"¸Æos",true);
+		SmartPhone s=new SmartPhone("»ï¼º","02","s-4321","°¶·°½Ã","Ä÷ÄÄ",100,16,"android",120,new Date(),"kt");
+		
+		t.information();
+	}
+
+}

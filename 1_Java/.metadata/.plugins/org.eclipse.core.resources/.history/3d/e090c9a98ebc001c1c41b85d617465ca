@@ -1,0 +1,15 @@
+package com.inherit.chap03.test01.bbb;
+
+public class MTest {
+
+	public static void main(String[] args) {
+		BBB b1 = new BBB();
+		b1.setAbc(1);
+		b1.setB(2);
+		System.out.println(b1.getAbc() + " + " + b1.getB() + " = " + b1.getSum());
+		
+		BBB b2=new BBB(3);
+		System.out.println(b2.getAbc()+" + "+b2.getB()+" = "+b2.getSum());
+	}
+
+}

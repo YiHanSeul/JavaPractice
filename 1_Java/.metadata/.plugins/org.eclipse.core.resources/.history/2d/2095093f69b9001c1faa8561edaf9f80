@@ -1,0 +1,10 @@
+package day1.member.controller.Run;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

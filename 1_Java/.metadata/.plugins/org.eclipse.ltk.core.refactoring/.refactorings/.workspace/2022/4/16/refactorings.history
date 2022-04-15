@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Java09_DimensionArray&apos; to &apos;Java09_DimensionlArray&apos;" description="Rename resource &apos;Java09_DimensionArray&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Java09_DimensionArray" name="Java09_DimensionlArray" stamp="1649637383555" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Java11_Object&apos; to &apos;Java11_ObjectArray&apos;" description="Rename resource &apos;Java11_Object&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Java11_Object" name="Java11_ObjectArray" stamp="1649744582274" updateReferences="true"/>
+</session>

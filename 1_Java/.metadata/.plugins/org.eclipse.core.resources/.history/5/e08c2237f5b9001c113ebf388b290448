@@ -1,0 +1,12 @@
+package com.arrayPractice1.sample;
+
+public class ArraySample {
+	
+	public void test2() {
+		int ar[]=new int[10];
+		
+		for(int i=0;i<ar.length;i++) {
+			
+		}
+	}
+}

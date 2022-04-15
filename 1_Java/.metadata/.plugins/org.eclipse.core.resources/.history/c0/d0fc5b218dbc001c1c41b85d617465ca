@@ -1,0 +1,10 @@
+package com.inherit.chap03.test01.bbb;
+
+public class MTest {
+
+	public static void main(String[] args) {
+		BBB b1 = new BBB();
+		//System.out.println(b1.getAbc() + " + " + b1.getB() + " = " + b1.getSum());
+	}
+
+}

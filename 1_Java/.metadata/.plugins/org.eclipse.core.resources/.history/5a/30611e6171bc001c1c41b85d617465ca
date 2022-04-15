@@ -1,0 +1,5 @@
+package com.inherit.chap01.after.model.dto;
+
+public class product {
+
+}

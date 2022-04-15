@@ -1,0 +1,5 @@
+package day1.member.model.vo.Member;
+
+public class Run {
+
+}

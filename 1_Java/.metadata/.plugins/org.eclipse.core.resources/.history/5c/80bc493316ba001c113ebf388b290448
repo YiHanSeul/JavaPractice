@@ -1,0 +1,12 @@
+package com.test.chap04.run;
+
+import com.test.chap04.model.dto.User;
+
+public class Run {
+
+	public static void main(String[] args) {
+		User u1=new User();
+		u1.information();
+	}
+
+}

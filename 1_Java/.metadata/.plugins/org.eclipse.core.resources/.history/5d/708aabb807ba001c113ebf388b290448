@@ -1,0 +1,5 @@
+package com.test.chap04.model.dto;
+
+public class User {
+
+}

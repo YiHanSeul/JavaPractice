@@ -1,0 +1,5 @@
+package com.inherit.chap02.override;
+
+public class Book {
+
+}

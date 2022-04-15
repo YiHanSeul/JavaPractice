@@ -1,0 +1,33 @@
+package com.test.chap01;
+
+public class Account {
+	//멤버변수 ( 필 드 )
+	String name ="이한슬";
+	String accNo="123-456-7890";
+	String pwd="1234";
+	int bankCode=20;
+	int balance=0;
+	
+	//생성자(객체를 생성하기위한 메서드중 하나임.) 리턴타입이 없음 
+	public Account(){}
+	//Account ac=new Account(); //Account() <- 생성자임.
+	
+	//입금
+	public void in(int money) {
+		if(money>0) {
+			balance+=money;
+			System.out.println(name+"님의 계좌에"+money+"원이 입금 되었습니다.");
+		}else {
+			System.out.println("잘못된 금액이 입력 되었습니다.");
+		}
+		
+	}
+	//출금
+	public void out(int money) {
+		
+	}
+	//잔액조회
+	public void display() {
+		
+	}
+}
