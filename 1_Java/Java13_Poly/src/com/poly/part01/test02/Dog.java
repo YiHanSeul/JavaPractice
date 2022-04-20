@@ -1,0 +1,19 @@
+package com.poly.part01.test02;
+
+public class Dog extends Base{
+
+	@Override
+	public void start() {
+		System.out.println("∏€∏€¿Ã ∞»¥¬¥Ÿ.");
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		System.out.println("∏€∏€¿Ã ∏ÿ√Ë¥Ÿ");
+
+	}
+	
+	
+}

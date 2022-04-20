@@ -30,14 +30,12 @@
     <fullyQualifiedTypeName name="com.test.chap02.defaultClass.model.DefaultClassTest"/>
     <fullyQualifiedTypeName name="com.test.chap02.publicClass.model.publicClassTest"/>
     <fullyQualifiedTypeName name="com.test.chap02.publicClass.model.PublicClassTest"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.arrayPractice1.sample.ArraySample"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.test.chap03.test02.InitBlock"/>
     <fullyQualifiedTypeName name="com.test.chap04.model.dto.User"/>
     <fullyQualifiedTypeName name="com.test.chap5.test02.MethodTest"/>
     <fullyQualifiedTypeName name="com.test01.model.dto.Book"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="silsub1.model.vo.Member.Member"/>
     <fullyQualifiedTypeName name="silsub2.model.vo.Product"/>
     <fullyQualifiedTypeName name="com.silsub1.objArr.model.vo.Student"/>
@@ -49,4 +47,16 @@
     <fullyQualifiedTypeName name="com.inherit.chap01.after.model.dto.Television"/>
     <fullyQualifiedTypeName name="com.inherit.chap01.after.model.dto.Desktop"/>
     <fullyQualifiedTypeName name="com.inherit.chap01.after.model.dto.SmartPhone"/>
+    <fullyQualifiedTypeName name="com.poly.part01.test03.Dog"/>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.poly.part01.test06.AreaImpl"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.poly.part01.test06.Triangle"/>
+    <fullyQualifiedTypeName name="com.poly.part01.test06.Square"/>
+    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Shape"/>
+    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Circle"/>
+    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Rectangle"/>
+    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Triangle"/>
+    <fullyQualifiedTypeName name="com.poly.silsub1.shape.controller.ShapeController"/>
 </qualifiedTypeNameHistroy>

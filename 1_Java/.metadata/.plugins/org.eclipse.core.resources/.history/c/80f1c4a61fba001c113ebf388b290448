@@ -1,8 +1,0 @@
-package com.test.chap5.test01;
-
-public class OverloadingTest {
-	public int test() {
-		return 1;
-		
-	}
-}

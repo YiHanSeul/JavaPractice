@@ -1,9 +1,0 @@
-package com.test.chap03.test01;
-
-public class KindOfVariable2 {
-	
-	public static int statisNum;
-	public void methodTest() {
-		static int localStaticNum;
-	}
-}

@@ -1,9 +1,0 @@
-package com.test01.run;
-
-public class ObjectArrayTest {
-
-	public static void main(String[] args) {
-
-	}
-
-}
