@@ -4,7 +4,8 @@ public class Run {
 
 	public static void main(String[] args) {
 		TestByteStream tb=new TestByteStream();
-		tb.fileSave();
+		//tb.fileSave();
+		tb.fileOpen2();
 	}
 
 }
