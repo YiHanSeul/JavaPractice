@@ -59,7 +59,7 @@ public class Book {
 		}else if(category==4) {
 			str="기타";
 		}
-		return "Book [도서번호: " + bNo + ", 분류: " + str + ", 제목: " + title + ", 저자: " + author + "]";
+		return "[도서번호: " + bNo + ", 분류: " + str + ", 제목: " + title + ", 저자: " + author + "]";
 	}
 	
 }
