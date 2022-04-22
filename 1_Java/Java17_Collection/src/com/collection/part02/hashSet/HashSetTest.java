@@ -7,7 +7,8 @@ import java.util.Iterator;
 public class HashSetTest {
 	public void testHashSet() {
 		//HashSet
-		
+		//set은 값을 하나씩 들고올수없음 순서가 없어서 
+		//뽑아오려면 iterator사용해야함.
 		HashSet hset=new HashSet();
 		hset.add("Java");
 		hset.add(123);

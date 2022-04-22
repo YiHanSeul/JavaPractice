@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.test01.ArrayTest01"/>
-    <fullyQualifiedTypeName name="com.test01.ArrayTest02"/>
-    <fullyQualifiedTypeName name="java.lang.Character"/>
-    <fullyQualifiedTypeName name="com.test01.ArrayTest03"/>
-    <fullyQualifiedTypeName name="com.test01.DeArrayTest"/>
-    <fullyQualifiedTypeName name="com.test.chap02.defaultClass.model.DefaultClassTest"/>
-    <fullyQualifiedTypeName name="com.test.chap02.publicClass.model.publicClassTest"/>
-    <fullyQualifiedTypeName name="com.test.chap02.publicClass.model.PublicClassTest"/>
-    <fullyQualifiedTypeName name="com.arrayPractice1.sample.ArraySample"/>
-    <fullyQualifiedTypeName name="com.test.chap03.test02.InitBlock"/>
     <fullyQualifiedTypeName name="com.test.chap04.model.dto.User"/>
     <fullyQualifiedTypeName name="com.test.chap5.test02.MethodTest"/>
     <fullyQualifiedTypeName name="com.test01.model.dto.Book"/>
@@ -39,7 +29,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
@@ -47,7 +36,6 @@
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="com.chap02.throwsPrac.Run"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="com.collection.part01.arrayList.ArrayListTest"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.collection.part01.sort.DescScore"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.collection.part02.hashSet.HashSetTest"/>
+    <fullyQualifiedTypeName name="com.collection.silsub1.model.dto.Book"/>
+    <fullyQualifiedTypeName name="com.collection.silsub1.model.dao.BookDao"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 </qualifiedTypeNameHistroy>

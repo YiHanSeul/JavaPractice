@@ -19,8 +19,10 @@ public class BookDao {
 	public int getLastBookNo() {
 		return 0;
 	}
-	public void addBook() {
-		
+	public void addBook(Book book) {
+		System.out.println(book);
+		bookList.add(new Book());	
+		System.out.println("bookList : "+bookList);
 	}
 	public int deleteBook() {
 		return 0;
@@ -32,7 +34,10 @@ public class BookDao {
 		return null;
 	}
 	public ArrayList<Book> selectAll(){
-		return null;
+		for(int i=0; i<bookList.size();i++) {
+			System.out.println(i+"¹øÂ°"+bookList.get(i));
+		}
+		return bookList;
 	}
 	public ArrayList<Book> sortedBookList(){
 		return null;

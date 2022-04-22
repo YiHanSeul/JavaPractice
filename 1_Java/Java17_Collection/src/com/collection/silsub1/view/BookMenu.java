@@ -43,11 +43,22 @@ public class BookMenu {
 				System.out.println("종료되었습니다.");
 				break;
 			}
+			if(num==6) break;
+			
 		}
 		
 	}
 	public Book inputBook() {
-		return null;
+		Book book=new Book();
+		System.out.print("도서 제목: ");
+		book.setTitle(input.nextLine());
+		input.nextLine();
+		System.out.print("\n도서 장르 (1:인문 / 2:자연과학 / 3:의료 / 4:기타) : ");
+		book.setCategory(input.nextInt());
+		input.nextLine();
+		System.out.print("\n도서 저자: ");
+		book.setAuthor(input.nextLine());
+		return book;
 	}
 	public int inputBookNo() {
 		return 0;
