@@ -1,5 +1,5 @@
 package com.collection.silsub1.model.dto;
-
+//dto(vo라고 불림)
 public class Book {
 	private int bNo;
 	private int category;

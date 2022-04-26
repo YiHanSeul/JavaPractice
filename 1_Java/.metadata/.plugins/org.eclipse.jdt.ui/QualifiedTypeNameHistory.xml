@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Circle"/>
-    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Rectangle"/>
-    <fullyQualifiedTypeName name="com.poly.silsub1.shape.model.vo.Triangle"/>
-    <fullyQualifiedTypeName name="com.poly.silsub1.shape.controller.ShapeController"/>
-    <fullyQualifiedTypeName name="com.chap01.string.Run"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
-    <fullyQualifiedTypeName name="com.chap01.runtime.RuntimeException"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-    <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="com.chap02.throwsPrac.Run"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="com.chap03.myException.MyException"/>
@@ -33,7 +17,6 @@
     <fullyQualifiedTypeName name="com.collection.part01.sort.DescScore"/>
     <fullyQualifiedTypeName name="com.collection.part02.hashSet.HashSetTest"/>
     <fullyQualifiedTypeName name="com.collection.silsub1.model.dao.BookDao"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
@@ -60,4 +43,21 @@
     <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.util.function.UnaryOperator"/>
+    <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="java.util.function.BiPredicate"/>
+    <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.controller.LibraryManager"/>
+    <fullyQualifiedTypeName name="com.view.LibraryMenu"/>
+    <fullyQualifiedTypeName name="com.model.vo.Member"/>
+    <fullyQualifiedTypeName name="com.model.vo.AniBook"/>
+    <fullyQualifiedTypeName name="com.model.vo.Book"/>
+    <fullyQualifiedTypeName name="com.model.vo.CookBook"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 </qualifiedTypeNameHistroy>
