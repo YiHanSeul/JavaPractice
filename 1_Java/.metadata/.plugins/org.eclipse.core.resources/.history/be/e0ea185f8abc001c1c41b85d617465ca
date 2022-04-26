@@ -1,7 +1,0 @@
-package com.inherit.chap03.test01.bbb;
-
-import com.inherit.chap03.test01.aaa.AAA;
-
-public class BBB extends AAA{
-
-}

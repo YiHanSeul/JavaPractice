@@ -1,9 +1,0 @@
-package singleton;
-
-public class SomgletonMain {
-
-	public static void main(String[] args) {
-		Singleton singleton =new Singleton();
-	}
-
-}

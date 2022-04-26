@@ -1,0 +1,38 @@
+람다식 :함수(메소드) 간단한 식으로 표현하는것.
+
+int sum(int no1, int no2){
+	return no1 +no2;
+}
+==> (no1,no2)->no1+no2
+람다는 익명함수. 어나니머스
+메소드명, 반환타입,  매개변수 타입, {} ,return 생략
+주의점: 하나일 때는 괄호 생략가능
+
+사실 익명객체가 생성되어 동작한다라고 말할수 있다
+
+(no1,no2)->no1+no2
+==>
+Object obj=new Object(){
+		int sum(int no1, int no2){
+			return no1+no2;
+		}
+}
+와 동일한것.
+==========
+함수형 인터페이스
+추상메서드 하나만 선언된 인터페이스
+@FunctionalInterface
+
+interface Test{
+	public abstract int sum(int no1, int no2);
+}
+==>
+Test test= new Test(){
+	int sum(int no1, int no2){
+		return no1+no2;
+		}
+	}
+	
+==> 
+Test test=(no1,no2) -> no1+no2;
+test.sum(1,2);
