@@ -1,0 +1,18 @@
+select * from EMPLOYEE;
+-- 실행: alt + x
+
+DROP TABLE MYTEST;
+
+CREATE TABLE MYTEST(
+	MNO INT,
+	MNAME VARCHAR(20),
+	NICKNAME VARCHAR(20)
+);
+
+create table MYTEST(
+	MNO INT,
+	MNAME VARCHAR(20),
+	NICKNAME varchar(20)
+);
+
+SELECT * FROM MYTEST;
