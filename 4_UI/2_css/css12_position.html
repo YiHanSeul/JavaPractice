@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!--
+        static :기본 원래 
+        relative : 상대적위치 원래 위치한 자리가 기준이 되어서 이동함
+        absolute :  부모의 기준으로 함 부모가 position설정이 되어있어야함 설정이 안되어있으면 body를 기준으로 함.
+        fixed
+    -->
+    <style>
+        #box{
+            width: 550px;
+            border: 1px dotted red;
+            position: relative;
+        }
+        p{
+            width: 130px;
+            height: 100px;
+        }
+        .myred{
+            background-color: red;
+            position: relative;
+            top:50px;
+            z-index: 2;
+        }
+        .myblue{
+            background-color:blue;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+        .mygrren{
+            background-color: green;
+            position: relative;
+            left: 30px;
+            top:-30px;
+        }
+        .myred:hover{
+            z-index: 100;
+        }
+        .myblue:hover{
+            z-index: 100;
+        }
+        .mygrren:hover{
+            z-index: 100;
+        }
+        #fixed{
+            position: fixed;
+            width:100px;
+            height:200px;
+            background-color: black;
+            color: white;
+            right:50px;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p class="myred"></p>
+        <p class="myblue"></p>
+        <p class="mygrren"></p>
+    </div>
+    <div id="fixed">
+        fixed!!
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
