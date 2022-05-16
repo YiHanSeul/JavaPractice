@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            border: 1px solid black;
+            width: 500px;
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+    </style>
+    <script>
+        function inputPrn(){
+            let name=document.getElementById("name").value;
+            let product=document.getElementById("product").value;
+            let price =document.getElementById("price").value;
+            
+            document.getElementById("result").innerHTML="구입자 : "+name+"<br>구입상품 : " +product+"<br>가격 : "+price;
+        
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h2>연습1</h2>
+    <span>구매자 :</span>
+    <input type="text" name="name" id="name" placeholder="구매자의 이름을 입력하세요"><br><br>
+    <span>상품명 :</span>
+    <input type="text"name="product" id="product" placeholder="상품명을 입력하세요"><br><br>
+    <span>가격 :</span>
+    <input type="text" name="price" id="price" placeholder="가격을 입력하세요"><br><br>
+
+    <button onclick="return  inputPrn();">입력값 출력하기</button>
+    <div id="result"></div>
+</body>
+</html>
