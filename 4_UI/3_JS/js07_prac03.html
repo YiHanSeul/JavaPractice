@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #titleBox{
+          display: none;
+          background-color: orange;
+          width: 600px;
+          height: 80px;
+          padding-top: 20px;
+          padding-left: 10px;
+          
+        }
+        #titleInput{
+            width: 400px;
+        }
+        #writerBox{
+            display: none;
+            background-color: orange;
+            width: 600px;
+            height: 80px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        #dateBox{
+            display: none;
+            background-color: orange;
+            width: 600px;
+            height: 80px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+    </style>
+    <script>
+        function titleShow(){
+            document.getElementById("writerBox").style.display = "none";
+            document.getElementById("dateBox").style.display = "none";
+            document.getElementById("titleBox").style.display = "block";
+            
+            console.log("test")
+        }
+        function date(){
+            document.getElementById("writerBox").style.display = "none";
+            document.getElementById("titleBox").style.display = "none";
+            document.getElementById("dateBox").style.display = "block";
+            let radioBox =document.getElementsByTagName("input");
+            
+        }
+        function writer(){
+            document.getElementById("dateBox").style.display = "none";
+            document.getElementById("titleBox").style.display = "none";
+            document.getElementById("writerBox").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h2>연습 2</h2>
+    <fieldset>
+        <legend>검색할 항목을 선택하세요.</legend>
+        <input onclick="titleShow();" type="radio" id="tt"><label>제목</label>
+        <input onclick="date();" type="radio"><label>날짜</label>
+        <input onclick="writer();" type="radio"><label>작성자</label>
+    </fieldset>
+    <hr>
+    <div id="titleBox">
+        검색할 제목을 입력하세요 : <br>
+        <input type="text" id="titleInput">
+        <button>검색</button>
+    </div>
+
+    <div id="dateBox">
+        검색할 날짜를 선택하세요 : <br>
+        <input type="date">
+        <input type="date">
+        <button>검색</button>
+    </div>
+
+    <div id="writerBox">
+        검색할 작성자 아이디를 입력하세요 : <br>
+        <input type="text">
+        <button>검색</button>
+    </div>
+</body>
+</html>
