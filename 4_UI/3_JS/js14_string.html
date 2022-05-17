@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function stringTest(){
+            let div1 = document.getElementById("div1");
+
+            let str1="Apple iPhone";
+            div1.innerHTML+=str1.toLocaleUpperCase()+"<br>";
+            div1.innerHTML+=str1.toLocaleLowerCase()+"<br>";
+
+            div1.innerHTML+=str1.length+"<br>";
+            div1.innerHTML+=str1.indexOf('e')+"<br>";
+            div1.innerHTML+=str1.lastIndexOf('e')+"<br>";
+
+            div1.innerHTML+=str1.substring(6,10)+"<br>";
+
+            let str2="사과, 망고, 바나나, 복숭아, 토마토, 키위, 수박";
+
+            let fruits=str2.split(", ");
+            console.log(fruits);
+
+            let str3=" String ";
+            let str4=" Test ";
+
+            let str5=str3+str4;
+            console.log(str5);
+
+            let con=str3.concat(" test "," Java "," Script");
+            console.log(con);
+        }
+    </script>
+</head>
+<body>
+    <h1>String</h1>
+    <h3>" " ,' '로 묶여 있는 리터럴</h3>
+    <button onclick="stringTest();">문자열</button>
+    <div id="div1"></div>
+</body>
+</html> 
