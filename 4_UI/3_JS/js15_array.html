@@ -58,6 +58,52 @@
             console.log("reverse 후 arr: "+arr);
 
         }
+
+        function arrTest3(){
+            //push() : 배열의 맨뒤에 요소 추가 , pop(): 배멸의 맨뒤에 요소 제거
+            let arr=['서초동','방배동','역삼동','삼성동','대치동'];
+            console.log(arr);
+            arr.push('도곡동');
+            console.log(arr);
+            arr.sort();
+            console.log('arr에 sort:'+ arr);
+            arr.push('개포동');
+            console.log('arr에 push'+ arr);
+            console.log(arr.pop());
+            console.log('arr에 pop'+ arr);
+            arr.pop();
+            console.log('arr에 pop :'+arr);
+
+            //shift() : 배열의 맨 앞에 요소 제거 , unshift(): 배열의 맨 앞에 요소 추가
+            arr=['야구', '축구','배구','농구','탁구','테니스'];
+            
+            console.log(`arr의 기본값: ${arr}`);
+            console.log(arr.shift());
+            console.log(`arr에 shift ${arr}`);
+
+            arr.unshift('당구');
+            console.log(`arr에 unshift: ${arr}`);
+
+            //slice() : 배열의 요소 선택 잘라내기 , splice(): 배열에 index위치 요소제거 및 추가
+            arr=['자바','디비','html','css','javascript'];
+            //slice -원본에 영향 X
+            console.log(`arr: ${arr}`);
+            console.log(arr.slice(2,4)); 
+            console.log(`slice 후 arr: ${arr}`);
+
+            //splice -원본에 영향 o
+            console.log(arr.splice(2,2,'spring'));
+            console.log(`splice 후 arr : ${arr}`);
+        }
+        function arrTest4(){
+            //toString(): 배열을 문자열로 반환한다.
+            let arr=['나는','열심히','운동','해서','건강','할거야'];
+            console.log(arr);
+            console.log(arr.toString());
+            console.log(arr);
+            console.log(arr.join());
+            console.log(arr.join('.'));
+        }
     </script>
 </head>
 <body>
@@ -70,5 +116,7 @@
 
     <h3>array객체의 메소드</h3>
     <button onclick="arrTest2();">클릭!!</button>
+    <button onclick="arrTest3();">클릭!!!</button>
+    <button onclick="arrTest4();">클릭!!!!</button>
 </body>
 </html>
