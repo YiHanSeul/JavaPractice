@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+    function reverseTest(){
+        let la1=document.getElementById("stringla1").innerHTML.split(" ");
+        let la2=document.getElementById("stringla2").innerHTML.split(" ");
+        console.log(la1);
+        console.log(la2);
+        la2.reverse();
+        console.log(la2);
+        let arr=la1.concat(la2);
+        var str=arr.join('');
+
+        document.getElementById("print").innerHTML=str;
+
+    }
+</script>
 </head>
 <body>
 	<h1> 배열 실습 문제2 </h1>
