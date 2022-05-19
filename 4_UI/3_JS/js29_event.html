@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Evnet</h1>
+    <h3>고전 이벤트 모델(기본)</h3>
+    <p>요소가 가지는 이벤트 속성에  핸들러를 연결하는 방법</p>
+    <button id="btn1">클릭!</button>
+    <button id="btn2">클릭!!</button>
+    <script>
+        let btn1=document.getElementById("btn1");
+        btn1.onclick=function(){
+            alert("btn1이 클릭되었습니다.");
+        }
+
+        document.getElementById("btn2").onclick=(e)=>{
+            alert("btn2가 클릭되었습니다");
+            console.log(window.event.target);
+            console.log(e.target);
+
+            btn1.onclick=null;
+        }
+    </script>
+
+    <h3>인라인 이벤트 모델</h3>
+    <p>요소 내부에 이벤트 속성으로써 실행할 내용을 작성하는 방식</p>
+    <button onclick="test1();">클릭!</button>
+    <script>
+        function test1(){
+            alert("인라인 이벤트 모델");
+            console.log(window.event.target);
+        }
+    </script>
+
+    <h3>표준 이벤트 모델(addEventListener)</h3>
+    <button id="btn3">클릭!!!</button>
+    <script>
+        let btn3=document.getElementById("btn3");
+        btn3.addEventListener("click",function (){
+            alert("표준이벤트 모델");
+        });
+
+        btn3.addEventListener("mouseenter",function(e){
+            alert("마우스 엔터");
+            console.log(e.target);
+        });
+    </script>
+
+</body>
+</html>
