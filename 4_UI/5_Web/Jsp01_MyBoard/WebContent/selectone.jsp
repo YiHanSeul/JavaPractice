@@ -3,6 +3,7 @@
     
 <% request.setCharacterEncoding("UTF-8"); %>
 <% response.setContentType("text/html; charset=UTF-8"); %>
+
 <%@ page import="com.my.dao.MyBoardDao" %>
 <%@ page import="com.my.dto.MyBoardDto" %>
 <!DOCTYPE html>
