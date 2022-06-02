@@ -96,7 +96,39 @@
 		</script>
 <%			
 		}
-	}
+	}else if(command.equals("updateroleform")){
+		int myno =Integer.parseInt(request.getParameter("myno"));
+		MyMemberDto dto=dao.selectUser(myno);
+		
+		//페이지전환을 위해 dto를 selectone이름으로 담음
+		request.setAttribute("selectone", dto);
+		pageContext.forward("updateroleform.jsp");
+		
+	}else if(command.equals("updaterole")){
+		int myno =Integer.parseInt(request.getParameter("myno"));
+		String myrole = request.getParameter("myrole");
+		
+		int res=dao.updateRole(myno,myrole);
+		
+		if(res>0){
 %>
+	<script type="text/javascript">
+		alert("회원등급 조정 성공");
+		location.href="logincontroller.jsp?command=userlistall";
+	</script>
+		
+<%
+		}else{
+%>
+	<script type="text/javascript">
+		alert("회원등급 조정 실패");
+		location.href="logincontroller.jsp?command=updateroleform&myno=<%=myno%>";
+	</script>
+<%
+		}
+	}
+	
+%>
+
 </body>
 </html>

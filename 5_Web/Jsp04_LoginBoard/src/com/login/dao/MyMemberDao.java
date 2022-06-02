@@ -156,4 +156,76 @@ public class MyMemberDao {
 	
 		return res;
 	}
+	
+	//회원정보 조회
+	public MyMemberDto selectUser(int myno) {
+		Connection con=getConnection();
+		PreparedStatement pstm=null;
+		ResultSet rs=null;
+		MyMemberDto res=null;
+		
+		String sql=" SELECT * FROM MYMEMBER WHERE MYNO=? ";
+		
+		try {
+			pstm=con.prepareStatement(sql);
+			pstm.setInt(1, myno);
+			System.out.println("03. qeury준비"+ sql);
+			
+			rs=pstm.executeQuery();
+			System.out.println("04. qeury 실행 및 리턴");
+			
+			if(rs.next()) {
+				res=new MyMemberDto();
+				res.setMyno(rs.getInt(1));
+				res.setMyid(rs.getString(2));
+				res.setMypw(rs.getString(3));
+				res.setMyname(rs.getString(4));
+				res.setMyaddr(rs.getString(5));
+				res.setMyphone(rs.getString(6));
+				res.setMyemail(rs.getString(7));
+				res.setMyenabled(rs.getString(8));
+				res.setMyrole(rs.getString(9));
+				
+			}
+		} catch (SQLException e) {
+			System.out.println("3/4단계 에러");
+			e.printStackTrace();
+		}finally {
+			close(rs);
+			close(pstm);
+			close(con);
+			System.out.println("05. db종료\n");
+		}
+		
+		return res;
+	}
+	
+	public int updateRole(int myno, String myrole) {
+		Connection con=getConnection();
+		PreparedStatement pstm=null;
+		int res=0;
+		String sql= "UPDATE MYMEMBER SET MYROLE=? WHERE MYNO=? ";
+		try {
+			pstm=con.prepareStatement(sql);
+			pstm.setString(1, myrole);
+			pstm.setInt(2,myno );
+			System.out.println("03. qeury준비"+ sql);
+			
+			res=pstm.executeUpdate();
+			System.out.println("04. qeury 실행 및 리턴");
+			if(res>0) {
+				commit(con);
+			}else {
+				rollback(con);
+			}
+		} catch (SQLException e) {
+			System.out.println("3/4단계 에러");
+			e.printStackTrace();
+		} finally {
+			close(pstm);
+			close(con);
+			System.out.println("05. db종료\n");
+		}
+		return res;
+	}
 }

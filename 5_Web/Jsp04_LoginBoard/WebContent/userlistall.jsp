@@ -11,6 +11,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+	function updateRole(myno){
+		location.href="logincontroller.jsp?command=updateroleform&myno="+myno;
+	}
+</script>
 </head>
 <body>	
 	<%
@@ -35,7 +40,7 @@
 		<td><%=dto.getMyname() %></td>
 		<td><%=dto.getMyemail() %></td>
 		<td><%=dto.getMyrole() %></td>
-		<td><button onclick="">변경</button></td>
+		<td><button onclick="updateRole(<%=dto.getMyno()%>);">변경</button></td>
 	</tr>
 <%
 	}
