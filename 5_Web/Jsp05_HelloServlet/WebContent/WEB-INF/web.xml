@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Jsp05_HelloServlet</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+
+<!-- 전역변수처럼 사용할수 있음 -->
+  <context-param>
+  	<param-name>url</param-name>
+  	<param-value>www.naver.com</param-value>
+  </context-param>
+  
+  <!-- mapping -->
+  	<servlet>
+  		<servlet-name>HelloServlet</servlet-name>
+  		<servlet-class>com.hello.controller.HelloController</servlet-class>
+  		
+  		<init-param>
+  			<param-name>id</param-name>
+  			<param-value>hanseul</param-value><!--  해당하는 서블릿이 초기화해서 생성할때 사용가능 -->
+  		</init-param>
+  		<load-on-startup>1</load-on-startup>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  		<servlet-name>HelloServlet</servlet-name>
+  		<!-- helloservlet.do로 요청을 하면 helloservlet이 실행됨 helloservlet은  com.hello.constroller.HelloController임 -->
+  		<url-pattern>/HelloServlet.do</url-pattern> 
+  	</servlet-mapping>
+</web-app>
