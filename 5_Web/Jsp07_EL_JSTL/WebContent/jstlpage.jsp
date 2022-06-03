@@ -32,7 +32,22 @@
 		</tr>
 		<c:forEach items="${list}" var="score"> <!--  list안에 있는 객체를 score에 하나씩 담아서 반복할거예요 -->
 				<tr>
-					<td>${score.name}</td>
+					<td>
+						<c:if test="${score.name eq '이름1' }">
+							<c:out value="이한슬"></c:out> 
+						</c:if>
+						<c:choose>
+							<c:when test="${score.name eq '이름2' }">
+								<c:out value="${score.name }님!"></c:out>
+							</c:when>
+							<c:when test="${score.name eq '이름3' }">
+								<c:out value="${score.name }님@@"></c:out>
+							</c:when>
+							<c:otherwise>
+								<c:out value="익명"></c:out>
+							</c:otherwise>
+						</c:choose>
+					</td>
 					<td>${score.kor}</td>
 					<td>${score.eng}</td>
 					<td>${score.math}</td>
@@ -43,5 +58,11 @@
 				</tr>
 		</c:forEach>
 	</table>
+	<c:forEach var ="i" begin="1" end="10">
+		${i }<br>
+	</c:forEach>
+	<c:set var="test" value="jstl test"/>
+		${test }
+	<c:out value="${test }"></c:out>
 </body>
 </html>
