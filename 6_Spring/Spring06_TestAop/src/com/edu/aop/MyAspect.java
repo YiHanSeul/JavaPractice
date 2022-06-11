@@ -1,5 +1,6 @@
 package com.edu.aop;
 
+
 public class MyAspect {
 	
 	public void before() {

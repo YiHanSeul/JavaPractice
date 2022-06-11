@@ -12,6 +12,6 @@ public class Rectangle extends Shape{
 	
 	@Override
 	public void viewSize() {
-		System.out.println(getTitle()+"의 넓이"+(getWidth()*getHeight()) );
+		System.out.println(getTitle()+"의 넓이 :"+(getWidth()*getHeight()) );
 	}
 }
