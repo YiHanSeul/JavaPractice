@@ -7,7 +7,6 @@
 
 	<!--  width:3 height:5 -->
 	<aop:aspectj-autoproxy/>
-	<bean id="myAspect" class="com.edu.aop.MyAspect"/>
 	<bean id="tri" class="com.edu.entity.Triangle">
 		<property name="title" value="삼각형"></property>
 		<property name="width" value="3"></property>
@@ -18,11 +17,22 @@
 		<property name="width" value="3"></property>
 		<property name="height" value="5"></property>
 	</bean>
+	
+	<bean id="myAspect" class="com.edu.aop.MyAspect"/>
+	
 	<aop:config>
+		<aop:pointcut expression="execution(* viewSize())" id="viewPoint"/>
 		<aop:aspect ref="myAspect">
-			<aop:before method="before" pointcut="execution(public * *(..))"/> <!-- advice -->
-			<aop:after method="after" pointcut="execution(public * *(..))"/> <!-- pointcut -->
+			<aop:before method="before" pointcut-ref="viewPoint"/> <!-- advice -->
+			<aop:after method="after" pointcut-ref="viewPoint"/> <!-- pointcut -->
 		</aop:aspect>
 	</aop:config>
+	
+ 	<!-- <aop:config>
+		<aop:aspect ref="myAspect">
+			<aop:before method="before" pointcut="execution(public * *(..))"/> advice
+			<aop:after method="after" pointcut="execution(public * *(..))"/> pointcut
+		</aop:aspect>
+	</aop:config>  --> 
 	
 </beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   <!--  dao안에 있는 네임스페이스가 같아야함 -->
+  <mapper namespace="myboard">
+  		<!--  필드랑 컬럼에 들어갈 값이 다를경우 셋팅해줘서 값을 매칭 할수 있게함 -->
+  		<resultMap type="boardDto" id="boardMap">
+  			<result property="myno" column="MYNO"/>
+  			<result property="myname" column="MYNAME"/>
+  			<result property="mytitle" column="MYTITLE"/>
+  			<result property="mycontent" column="MYCONTENT"/>
+  			<result property="mydate" column="MYDATE"/>
+  		
+  		</resultMap>
+  		<!-- resultType select하고 결과값을 어떤타입의 클래스로 담을지 명시 config.xml에 alias설정해둠 -->
+  		<!--  reqsultType은 반환값이랑 타입이 같아야함 -->
+  		<select id="selectList" resultType="boardDto"> 
+  			SELECT * FROM MYBOARD ORDER BY MYNO DESC
+  		</select>
+  		<!--  넘어오는 파라미터 값의 타입을 명확하게 명시해줌  -->
+  		<select id="selectOne" parameterType="int" resultMap="boardMap" >
+  			SELECT MYNO, MYNAME, MYTITLE, MYCONTENT, MYDATE
+  			 FROM MYBOARD WHERE MYNO = #{myno}
+  		</select>
+
+  		<insert id="insert" parameterType="boardDto">
+			INSERT INTO MYBOARD
+			VALUES(NULL, #{myname}, #{mytitle}, #{mycontent}, NOW())  		
+  		</insert>
+  </mapper>
