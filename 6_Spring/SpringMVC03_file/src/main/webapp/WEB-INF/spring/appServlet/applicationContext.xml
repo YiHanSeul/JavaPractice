@@ -4,5 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!--  uploadForm.jsp 에서 -->
+	<!-- <form:form method="post" enctype="multipart/form-data" modelAttribute="uploadFile" action="upload.do"> -->
+	<!-- enctype의 보내주는 형식에서 파일사이즈랑,인코딩형식을 명확하게 명시해서 사용할수있도록함 bean이 없으면 null로 나와서 파일을 제대로 못읽음 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="100000000"></property>
+		<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
 		
 </beans>

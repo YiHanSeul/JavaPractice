@@ -18,7 +18,7 @@ public class FileValidator implements Validator {
 	public void validate(Object target, Errors errors) {
 		UploadFile file=(UploadFile)target; //object를 uploadfile로 형변환
 		
-		if(file.getFile()==null) {//파일의 size가 0이면 error
+		if(file.getFile().getSize()==0) {//파일의 size가 0이면 error
 			errors.rejectValue("file", "errorCode","Please select a file");
 		}
 	}
