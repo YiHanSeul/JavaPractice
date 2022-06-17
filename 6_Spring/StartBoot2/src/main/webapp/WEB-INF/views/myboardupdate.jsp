@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="update">
+	<form action="update" method="post">
 			<input type="hidden" name="myno" value="${dto.myno}">
 		<table border="1">
 			<tr>

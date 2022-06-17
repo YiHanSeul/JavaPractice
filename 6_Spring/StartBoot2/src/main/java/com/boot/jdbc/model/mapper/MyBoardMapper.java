@@ -17,7 +17,7 @@ public interface MyBoardMapper {
 	List<MyDto> selectList();
 	
 	
-	@Select(" SELECT * FROM MYBOARD WHERE MYNO= #{myno}")
+	@Select(" SELECT * FROM MYBOARD WHERE MYNO= #{myno} ")
 	MyDto selectOne(int myno);
 	
 	@Insert(" INSERT INTO MYBOARD VALUES(NULL, #{myname},#{mytitle}, #{mycontent}, NOW()) ")

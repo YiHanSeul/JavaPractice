@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.boot.jdbc.model.dto.MyDto;
@@ -23,9 +24,8 @@ public class MyBoardController {
 		return "myboardlist";
 	}
 	
-	@RequestMapping("/detail")
+	@GetMapping("/detail")
 	public String selectOne(Model model ,int myno) {
-		System.out.println("myno!!!"+myno);
 		
 		model.addAttribute("one",myService.selectOne(myno));
 		return "myboarddetail";
@@ -36,7 +36,7 @@ public class MyBoardController {
 		return "myboardinsert";
 	}
 	
-	@GetMapping("/insert")//작성글 저장
+	@PostMapping("/insert")//작성글 저장
 	public String insert(Model model, MyDto dto) {
 		int res=myService.insert(dto);
 		if(res>0) {
@@ -53,13 +53,13 @@ public class MyBoardController {
 		return "myboardupdate";
 	}
 	
-	@GetMapping("update")
+	@PostMapping("update")
 	public String update(MyDto dto) {
 		int res= myService.update(dto);
 		if(res>0) {
 			return "redirect:list";
 		}else {
-			return "myboardupdate";
+			return "redirect:/myboard/updateform?myno="+dto.getMyno();
 		}
 	}
 	

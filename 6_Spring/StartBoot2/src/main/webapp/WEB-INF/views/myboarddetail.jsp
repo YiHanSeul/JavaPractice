@@ -22,7 +22,7 @@
 	</tr>
 	<tr>
 		<th>MYCONTENT</th>
-		<td> <textarea rows="10" cols="60">${one.mycontent }</textarea>
+		<td> <textarea rows="10" cols="60" readonly="readonly">${one.mycontent }</textarea>
 	</tr>
 	<tr>
 		<th>MYDATE</th>
@@ -32,6 +32,7 @@
 		<td colspan="2" align="center">
 		<input type="button" value="수정" onclick="location.href='updateform?myno=${one.myno}'">
 		<input type="button" value="삭제" onclick="location.href='delete?myno=${one.myno}'">
+		<input type="button" value="목록" onclick="location.href='/myboard/list'">
 		</td>
 	</tr>
 </table>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="script/scripts.js"></script>
+</head>
+<body>	
+	<h1>Expression</h1>
+	<p th:text="|Hello, ${name}">hello $nadnqwl</p>
+	<p th:text="${dto.subject}">dto.subject</p>
+	
+	<div th:object="${dto}"> <!-- div태그안에서 단순히 dto 선택함 -->
+		<p th:text="*{subject}"></p> <!--  *은 상단의 객체 즉 dto 선택변수라고 함-->
+		<p th:text="*{seq}"></p> <!--  *은 상단의 객체 즉 dto -->
+	</div>
+	
+	<p th:text="${list.get(1).subject}"></p>
+	<table border="1">
+		<tr>
+			<th>SUBJECT</th>
+			<th>SEQ</th>
+		</tr>
+		<tr th:each="dto:${list}"><!--  변수:타겟 -->
+			<td th:object="${dto}">
+				<span th:text="*{subject}"></span>
+			</td>
+			<td th:object="${dto}">
+				<span th:text="*{seq}"></span>
+			</td>
+		</tr>
+	</table>
+	
+	<table border="1">
+		<tr th:if="${list}ne null">
+			<td>list가 null아닙니다</td>
+		</tr>
+		<tr th:unless="${list} ne null">
+			<td>list가 null이 맞습니다</td>
+	</table>
+	
+	<div th:each="num:${#numbers.sequence(1,3)}"> <!-- 시퀀스값이 1부터 3까지 하나씩 증가하면서 값을 가져온다 -->
+		<th:block th:switch="${num}">
+			<p th:case="1" th:text="|this is ${num}|"></p>
+			<p th:case="2" th:text="|this is ${num}|"></p>
+			<p th:case="3" th:text="|this is ${num}|"></p>
+		</th:block>
+	</div>
+</body>
+</html>
