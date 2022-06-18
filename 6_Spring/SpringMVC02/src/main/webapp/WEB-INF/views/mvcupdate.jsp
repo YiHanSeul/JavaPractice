@@ -6,9 +6,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<script>
+	console.log(dt.myno);
+</script>
 <body>
 	<form action="updateres.do" method="post">
-	
+		
 		<input type="hidden" name="myno" value="${dto.myno }">
 		<table border="1">
 			<tr>
@@ -17,7 +20,7 @@
 			</tr>
 			<tr>
 				<th>TITLE</th>
-				<td><input type="text" name="mytitle" value="${dto.mytitle }"></td>
+				<td><input type="text" name="mytitle" value="${dto.mytitle }" placeholder="${dto.mytitle }"></td>
 			</tr>
 			<tr>
 				<th>CONTENT</th>
