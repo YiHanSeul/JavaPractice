@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>입력폼</h1>
 <form action="input" method="post">
 	<b>이름</b> :  <input type="text" name="name"><br>
 	<b>나이</b> :  <input type="text" name="age"><br>
